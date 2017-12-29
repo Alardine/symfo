@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="fr">
+    <head>
+        <meta charset="UTF-8" />
+        <title>{% block title %}Alardine | AMF certification Formation Recrutement Digital{% endblock %}</title>
+        {% block stylesheets %}{% endblock %}
+        <link rel="icon" type="image/x-icon" href="{{asset('img/favicon.png')}}" />
+        <meta name="description" content="Reconversion professionnelle dans la banque, formation et recrutement, certification AMF ">
+        <meta name="keywords" content="Formation certification AMF">
+        <meta name="viewport" content="width=device-width,initial=scale=1.0">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+        <link rel="stylesheet" href="https://opensource.keycdn.com/fontawesome/4.7.0/font-awesome.min.css">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Caudex|Roboto+Slab">
+        <link rel="stylesheet" href="{{ asset('css/normalize.css')}}">
+        <link rel="stylesheet" href="{{ asset('css/trouverUnTalent.css')}}">
+        <link rel="stylesheet" href="{{ asset('css/style.css')}}">
+
+    </head>
+    <body>
+
+          <!-- <div class="backG"></div> -->
+          <header>
+              <div id="logo-button">
+                  <div>
+                      <a href="{{path('homepage')}}">
+                      <img id="logo_alardine" src="{{ asset('img/alardin3d_spin2.gif')}}" alt="alardine_logo"></a>
+                  </div>
+                  <nav id="navigation">
+                      <ul>
+                          <li id="menu1" class="menu">
+                              <a href="nous.php">Qui Sommmes Nous ?</a>
+                          </li>
+                      </ul>
+                      <ul>
+                          <li id="menu2" class="menu">
+                              <a href="{{path('register')}}" id="co">Candidat</a>
+                          </li>
+                      </ul>
+                      <ul>
+                          <li id="menu3" class="menu">
+                              <a href="trouver_un_talent.php">Recrutement</a>
+                          </li>
+                      </ul>
+                      <ul>
+                          <li id="menu4" class="menu">
+                              <a href="#">Actualités</a>
+                          </li>
+                      </ul>
+                      <ul>
+                          <li id="menu4" class="menu">
+                              <a href="#" id="addModal">Contacter-nous</a>
+                          </li>
+                      </ul>
+                  </nav>
+
+                  <section id="lien">
+                  <a href="https://www.facebook.com/Alardine.recrutement.formation/" target="_blank"><i class="fa fa-facebook-square" aria-hidden="true"></i></a>
+                  <a href="https://twitter.com/alardine" target="_blank"><i class="fa fa-twitter-square" aria-hidden="true"></i></a>
+                  <a href="https://www.linkedin.com/company/alardine?" target="_blank"><i class="fa fa-linkedin-square" aria-hidden="true"></i></a>
+                  </section>
+                  </div>
+    </header>
+  {% block body %}{% endblock %}
+  </main>
+      <footer>
+         <section>
+              <h3>Nos certifications et labels</h3>
+              <figure id="certificat">
+                  <div>
+                      <img class="logo" src="{{ asset('img/afaq.png')}}">
+                      <figcaption>
+                          Notre centre de formation est certifié e-AFAQ « Conformité en formation professionnelle », reconnu par le CNEFOP
+                      </figcaption>
+                  </div>
+                  <div>
+                      <img class="logo" src="{{ asset('img/qrcode.png')}}">
+                      <figcaption>
+                          Vérifier la validité du certificat de notre centre en flashant le QR code </figcaption>
+                  </div>
+                  <div>
+                      <img class="logo" src="{{ asset('img/icpf.png')}}">
+                      <figcaption>
+                          L’ICPF &amp; PSI atteste que notre formateur confirmé satisfait aux exigences requises de la formation reconnu par le CNEFOP </figcaption>
+                  </div>
+                  <div>
+                      <img class="logo" src="{{ asset('img/chartediversite.png')}}">
+                      <figcaption>
+                          Nous sommes signataire de la charte de la diversité
+                      </figcaption>
+                  </div>
+                  <div>
+                      <img class="logo" id="datadock" src="{{ asset('img/datadock.png')}}">
+                      <figcaption>
+                          Alardine Formation est référencé sur la nouvelle plateforme Datadock commune à tous les financeurs
+                      </figcaption>
+                  </div>
+              </figure>
+          </section>
+
+          <section id="copyright">
+              <p class="copyright">
+                  © 2017&nbsp;ALARDINE
+              </p>
+              <div tabindex="0" title="Facebook Like" aria-label="Facebook Like" class="fbl1 copyright" id="comp-iykjpw0p">
+                  <div id="comp-iykjpw0pfacebook" class="fbl1facebook"><iframe frameborder="0" width="290" height="40" scrolling="no" overflow="hidden" allowtransparency="true" title="Facebook Like" aria-label="Facebook Like" id="comp-iykjpw0piframe" class="fbl1iframe" src="https://www.facebook.com/plugins/like.php?a=a&amp;action=recommend&amp;colorscheme=light&amp;href=http%3A%2F%2Fwww.alardine.fr&amp;layout=standard&amp;locale=fr_FR&amp;send=false&amp;show_faces=false" style="width: 290px; height: 40px;"></iframe></div>
+              </div>
+              <p class="copyright">
+                  <a class="auto-generated-link" data-auto-recognition="true" data-content="Contact@alardine.fr" href="mailto:Contact@alardine.fr" data-type="mail">
+                      Contact@alardine.fr</a>&nbsp;  | &nbsp;  87-95 rue Louis Ampère Neuilly-sur-Marne
+              </p>
+          </section>
+      </footer>
+
+  <script src="{{ asset('js/jquery-3.2.1.min.js')}}"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.3/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/js/bootstrap.min.js"></script>
+  <script src="{{ asset('js/slide.js')}}"></script>
+  <script src="{{ asset('js/script.js')}}"></script>
+
+
+        {% block javascripts %}{% endblock %}
+    </body>
+</html>

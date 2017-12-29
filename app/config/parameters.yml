@@ -1,0 +1,13 @@
+# This file is auto-generated during the composer install
+parameters:
+    database_host: 127.0.0.1
+    database_port: null
+    database_name: alardine
+    database_user: root
+    database_password: paris
+    mailer_transport: smtp
+    mailer_host: smtp.gmail.fr
+    mailer_encryption: ssl
+    mailer_user: adresse_email@truc.fr
+    mailer_password: mdpdumail
+    secret: 582b920c5062daf317eecbc430ec6a6be5b79cc4
